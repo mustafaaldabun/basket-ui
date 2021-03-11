@@ -1,0 +1,60 @@
+.BuildControls {
+  width: 100%;
+  background-color: #001f3f;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 0 2px 1px #ccc;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  color: #001f3f;
+  align-items: center;
+  margin: 10px;
+  width: 20%;
+  height: 40%;
+  text-align: center;
+}
+
+hr {
+  width: 21.3%;
+}
+
+.Button {
+  background-color: #001f3f;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 20px;
+  width: auto;
+  padding: 15px 30px;
+}
+
+.Button:hover, .Button:active {
+  background-color: #6b5b95;
+  font-weight: bold;
+  width: auto;
+  color: white;
+}
+
+.Button:disabled {
+  background-color: #C7C6C6;
+  cursor: not-allowed;
+  border: none;
+  color: #888888;
+  width: auto;
+  padding: 10px;
+}
+
+.Button:not(:disabled) {
+  animation: enable 0.3s linear;
+  width: auto;
+  padding: 10px;
+}
